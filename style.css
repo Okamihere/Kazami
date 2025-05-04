@@ -1,3 +1,100 @@
-<style>
-    
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  overflow-x: hidden;
+  background: #1f1723;
+  font-family: 'Chivo', sans-serif;
+}
+
+#vanta-bg {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  padding: 10vh 5vw;
+  height: 100vh;
+  text-align: center;
+}
+.hero-text h1 {
+  color: #b1b2b5;
+  font-weight: 600;
+  font-size: clamp(2rem, 10vw, 7.5rem);
+}
+p {
+  color: #b1b2b5;
+  font-weight: 300;
+  font-size: clamp(2rem, 10vw, 1.25rem);
+}
+.hero-button {
+  position: relative;
+  width: 101px;
+  height: 101px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 31px;
+  height: 19px;
+  animation: fancy-bounce 2s ease-in-out infinite;
+}
+
+@keyframes fancy-bounce {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  30% {
+    transform: translate(-50%, -90%) scale(1.05);
+  }
+
+  70% {
+    transform: translate(-50%, -65%) scale(1.02);
+  }
+}
+
+/* PRINCIPAL */
+.tela-de-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15vh 5vw;
+  background: #b1b2b5;
+  color: #1f1723;
+  height: 100vh;
+  user-select: none;
+}
+
+h2.kazami-title {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 600;
+  font-size: clamp(3rem, 15vw, 10rem);
+  text-align: center !;
+  line-height: 1;
+  word-break: break-word;
+  max-width: 100%;
+}
+
